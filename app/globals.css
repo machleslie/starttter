@@ -19,3 +19,18 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+@font-face{
+  src: url("fonts/Bocalupo-Regular.woff")format("woff");
+  font-family:'Bocalupo Regular';
+  font-weight: 100 900;
+  font-style: normal;
+}
+.Bocalupo-Regular{
+  font-family: "Bocalupo Regular";
+  font-weight: 700;
+  /* font-size: 8rem; */
+ 
+}
+.bgall{
+  background-color: #f7fbe9;
+}
