@@ -1,9 +1,9 @@
 import { z } from "zod";
 
 export const signinSchema = z.object({
-  name: z
+  username: z
     .string()
-    .min(2, { message: "Name must be at least 2 characters long." })
+    .min(2, { message: "Username must be at least 2 characters long." })
     .trim(),
   email: z.string().email({ message: "Please enter a valid email." }).trim(),
   password: z
@@ -18,7 +18,7 @@ export const signinSchema = z.object({
 });
 
 export const loginSchema = z.object({
-  name: z.string({ message: "Please enter valid name" }),
+  username: z.string({ message: "Please enter valid Username" }),
   password: z.string({ message: "Please enter valid password" }),
 });
 
