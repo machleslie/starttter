@@ -10,7 +10,7 @@ export default function page() {
           password.
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center">
+      <form className="flex flex-col items-center justify-center">
         <input
           type="email"
           placeholder="Email"
@@ -19,7 +19,7 @@ export default function page() {
         <button className="my-4 h-12 w-1/2 rounded-md bg-gray-800 text-white">
           Send reset link
         </button>
-      </div>
+      </form>
     </div>
   );
 }
