@@ -1,13 +1,12 @@
 "use server";
-import {
-  loginSchema,
-  signupSchema,
-} from "@/app/auth/definations";
+import { loginSchema, signupSchema } from "@/app/auth/definations";
 import PocketBase from "pocketbase";
 import bcrypt from "bcrypt";
 import { createSession, deleteSession } from "@/app/auth/session";
 
-const pb = new PocketBase("http://127.0.0.1:8090");
+const pocketbaseurl = process.env.Pocketbase_url;
+
+const pb = new PocketBase(pocketbaseurl);
 
 export async function signup(state, formdata) {
   const verifyForm = signupSchema.safeParse({

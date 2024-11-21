@@ -1,3 +1,5 @@
+import Form from "next/form";
+
 export default function page() {
   return (
     <div className="mx-40">
@@ -6,11 +8,11 @@ export default function page() {
           Forgot password ?
         </h1>
         <p className="my-4 text-center text-gray-600">
-          Enter your email address below and we&apos;ll send you a link to reset your
-          password.
+          Enter your email address below and we&apos;ll send you a link to reset
+          your password.
         </p>
       </div>
-      <form className="flex flex-col items-center justify-center">
+      <Form className="flex flex-col items-center justify-center">
         <input
           type="email"
           placeholder="Email"
@@ -19,7 +21,7 @@ export default function page() {
         <button className="my-4 h-12 w-1/2 rounded-md bg-gray-800 text-white">
           Send reset link
         </button>
-      </form>
+      </Form>
     </div>
   );
 }
